@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "622239463579",
+    "firebase_url": "https://daring-chess-193006.firebaseio.com",
+    "project_id": "daring-chess-193006",
+    "storage_bucket": "daring-chess-193006.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622239463579:android:063916d42cc37521",
+        "android_client_info": {
+          "package_name": "com.example.hong.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "622239463579-e93m5mqvoqgicotr1kl0ld4t2t70cua9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAn1i1vnYHjS2dOkyBbFuUhi9bDbiPIqV4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/jamechoi/Desktop/AroProject/06.Aro-Android/ODsaySDKSampleForAndroid/ODsayAndroidSDKSample/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/Users/jamechoi/.android/build-cache/ab55d30523ddefce363ef00b5a3831f5baf92254/output/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/jamechoi/Desktop/AroProject/06.Aro-Android/ODsaySDKSampleForAndroid/ODsayAndroidSDKSample/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/Users/jamechoi/.android/build-cache/ab55d30523ddefce363ef00b5a3831f5baf92254/output/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/Users/jamechoi/Desktop/AroProject/06.Aro-Android/ODsaySDKSampleForAndroid/ODsayAndroidSDKSample/build/intermediates/res/merged/debug/drawable-v21/notification_action_background.xml",
+        "source": "/Users/jamechoi/.android/build-cache/ab55d30523ddefce363ef00b5a3831f5baf92254/output/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/Users/jamechoi/Desktop/AroProject/06.Aro-Android/ODsaySDKSampleForAndroid/ODsayAndroidSDKSample/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/Users/jamechoi/.android/build-cache/ab55d30523ddefce363ef00b5a3831f5baf92254/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    }
+]

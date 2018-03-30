@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#aadfdc"
+    tools:context="com.example.hong.myapplication.friend_detail">
+
+    <TextView
+        android:id="@+id/chatting_info"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/chatting_back_button"
+        android:layout_toRightOf="@+id/chatting_back_button"
+        android:background="#93ded9"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <ImageButton
+        android:id="@+id/chatting_back_button"
+        android:layout_width="60dp"
+        android:layout_height="59dp"
+        android:background="#93ded9"
+        app:srcCompat="@drawable/ic_arrow_back_24dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints,VectorDrawableCompat" />
+
+
+    <EditText
+        android:id="@+id/send_message"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/send_message_button"
+        android:layout_toStartOf="@+id/send_message_button"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="#000000" />
+
+    <ImageView
+        android:id="@+id/send_message_button"
+        android:layout_width="79dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/mail_sent" />
+
+    <ImageView
+        android:id="@+id/meet_now_button"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/back_button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        app:srcCompat="@drawable/meet" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chatting_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/send_message"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/chatting_info"
+        android:scrollbars="vertical"></android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

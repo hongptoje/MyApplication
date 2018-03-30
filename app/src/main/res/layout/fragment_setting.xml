@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:id="@+id/setting_fragment">
+
+
+    <ImageView
+        android:id="@+id/profile_image_setting"
+        android:layout_width="146dp"
+        android:layout_height="146dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/profile_image_default" />
+
+    <EditText
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/profile_image_setting"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/profile_image_setting"
+        android:layout_toRightOf="@+id/profile_image_setting"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:visibility="invisible"
+        android:text=""
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/profile_change_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:text="수정" />
+
+    <Button
+        android:id="@+id/profile_ok_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/profile_change_button"
+        android:layout_alignBottom="@+id/profile_change_button"
+        android:layout_alignLeft="@+id/profile_change_button"
+        android:layout_alignStart="@+id/profile_change_button"
+        android:text="확인"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="66dp"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:text="로그아웃" />
+
+    <EditText
+        android:id="@+id/profile_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/profile_image_setting"
+        android:layout_toEndOf="@+id/profile_image_setting"
+        android:layout_toRightOf="@+id/profile_image_setting"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:visibility="invisible"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/profile_image_setting"
+        android:layout_toEndOf="@+id/profile_image_setting"
+        android:layout_toRightOf="@+id/profile_image_setting"
+        android:text="이름"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_name"
+        android:layout_marginTop="17dp"
+        android:layout_toEndOf="@+id/profile_image_setting"
+        android:layout_toRightOf="@+id/profile_image_setting"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:text="상태메시지" />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/profile_name"
+        android:layout_alignBottom="@+id/profile_name"
+        android:layout_toEndOf="@+id/profile_image_setting"
+        android:layout_toRightOf="@+id/profile_image_setting"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/text_state_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/profile_message"
+        android:layout_alignBottom="@+id/profile_message"
+        android:layout_toEndOf="@+id/profile_image_setting"
+        android:layout_toRightOf="@+id/profile_image_setting"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+</RelativeLayout>

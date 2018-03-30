@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10">
+
+            <ImageView
+                android:id="@+id/chatting_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40">
+
+            <TextView
+                android:id="@+id/chatting_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text="test"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:id="@+id/chatting_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/chatting_name"
+                android:layout_alignStart="@+id/chatting_name"
+                android:layout_below="@+id/chatting_name"
+                android:text="test"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:background="#ffffff"
+                android:layout_marginTop="5px"
+                android:paddingLeft="15px"
+                android:paddingRight="15px"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/chatting_message_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="13dp"
+                android:layout_marginRight="13dp"
+                android:text="test"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:paddingLeft="15px"
+                android:paddingRight="15px"
+                android:background="#fff200"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

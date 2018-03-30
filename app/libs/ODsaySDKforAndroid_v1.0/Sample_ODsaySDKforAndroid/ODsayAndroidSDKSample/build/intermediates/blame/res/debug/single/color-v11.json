@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/jamechoi/Desktop/AroProject/06.Aro-Android/ODsaySDKSampleForAndroid/ODsayAndroidSDKSample/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/jamechoi/.android/build-cache/ab55d30523ddefce363ef00b5a3831f5baf92254/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "/Users/jamechoi/Desktop/AroProject/06.Aro-Android/ODsaySDKSampleForAndroid/ODsayAndroidSDKSample/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/jamechoi/.android/build-cache/ab55d30523ddefce363ef00b5a3831f5baf92254/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    }
+]

@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/topPanel"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<fragment-->
+            <!--android:id="@+id/place_autocomplete_fragment"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"-->
+            <!--/>-->
+
+    <!--</LinearLayout>-->
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        tools:context="com.example.hong.myapplication.MapsActivity" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:elevation="10dp"
+        android:background="#fff"
+        android:id="@+id/relLayout1"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/ic_search_black"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_search_black_24dp"
+            />
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/ic_search_black"
+            android:layout_centerVertical="true"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:id="@+id/input_search"
+            android:inputType="text"
+            android:hint="주소를 입력하세요"
+            android:textColorHint="#000"
+            android:imeOptions="actionSearch"
+            />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/place_info"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/ic_gps"
+        android:src="@drawable/ic_gps"
+        />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/place_picker"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/relLayout1"
+        android:src="@drawable/ic_map"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/place_picker"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/place_info"
+        android:src="@drawable/ic_info"
+        />
+
+    <LinearLayout
+        android:id="@+id/checkboxLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relLayout1"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:background="#00ffea">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="식당"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_marginTop="3dp"
+            />
+
+        <CheckBox
+            android:id="@+id/checkboxRestaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/checkboxLinearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkboxLinearLayout"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:background="#ffdd00">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="카페"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"/>
+
+        <CheckBox
+            android:id="@+id/checkboxCafe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/comeHere"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/checkboxLinearLayout2"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/hereeeeee"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        />
+
+    <RelativeLayout
+        android:id="@+id/infoWindow"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="460dp"
+        android:background="#fff"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="이름"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="주소"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/tvPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAddress"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="전화"
+            android:textColor="#0011ff" />
+
+        <TextView
+            android:id="@+id/itemLatitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAddress"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:visibility="gone"
+            android:textColor="#0011ff" />
+
+        <TextView
+            android:id="@+id/itemLongitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAddress"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:visibility="gone"
+            android:textColor="#0011ff" />
+
+        <Button
+            android:id="@+id/naviButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="#632a0d"
+            android:text="길찾기"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/findDirection"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginTop="330dp"
+        android:background="#cba8ffee"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/taxiImage"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="2dp"
+            android:background="#ff6f76"
+            android:src="@drawable/taxi"
+            />
+
+        <ImageView
+            android:id="@+id/busImage"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/taxiImage"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="3dp"
+            android:background="#65c1ff"
+            android:src="@drawable/bus"
+            />
+
+
+        <TextView
+            android:id="@+id/startPoint"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="출발지"
+            android:textColor="#000"
+            android:textSize="13dp"
+            android:layout_below="@+id/taxiImage"
+             />
+
+        <TextView
+            android:id="@+id/endPoint"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/startPoint"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="목적지"
+            android:textSize="13dp"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/totalDistance"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/endPoint"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="거리"
+            android:textSize="13dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/totalTime"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/startPoint"
+            android:layout_alignBottom="@+id/startPoint"
+            android:layout_toEndOf="@+id/startPoint"
+            android:layout_toRightOf="@+id/startPoint"
+            android:text="소요시간"
+            android:textColor="#000000"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/endTime"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/endPoint"
+            android:layout_toRightOf="@+id/endPoint"
+            android:text="도착시간"
+            android:textColor="#000000"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/taxiFare"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/totalDistance"
+            android:layout_toRightOf="@+id/totalDistance"
+            android:text="택시"
+            android:textColor="#000000"
+            android:textSize="13dp" />
+
+        <Button
+            android:id="@+id/closeDirectionInfo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:text="X"
+            android:textSize="8dp"
+            android:gravity="center"
+            />
+
+        <!--<Button-->
+            <!--android:id="@+id/startNavi"-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:background="#001dc4"-->
+            <!--android:text="길안내-->
+<!--시작"-->
+            <!--android:textSize="20dp"-->
+            <!--android:textStyle="bold" />-->
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/transit_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/taxiImage"
+            android:scrollbars="vertical"
+            android:background="#fff"
+            android:visibility="invisible"
+            ></android.support.v7.widget.RecyclerView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/direction_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/totalDistance"
+            android:scrollbars="vertical"
+            android:background="#fff"
+            ></android.support.v7.widget.RecyclerView>
+
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/relLayoutTransitDirectionList"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:visibility="invisible">
+
+        <Button
+            android:id="@+id/closeTransitDirectionInfo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:text="X"
+            android:textSize="8dp"
+            android:gravity="center"
+            />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/transit_direction_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:scrollbars="vertical"
+        android:background="#fff"
+        android:visibility="visible"
+        ></android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+

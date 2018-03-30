@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hong.myapplication.friend_add"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#6A4318"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/back_button"
+        android:layout_marginLeft="79dp"
+        android:layout_marginStart="79dp"
+        android:layout_toEndOf="@+id/back_button"
+        android:layout_toRightOf="@+id/back_button"
+        android:text="친 구 찾 기"
+        android:textSize="30dp" />
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="60dp"
+        android:layout_height="59dp"
+        android:background="#00ff0000"
+        app:srcCompat="@drawable/ic_arrow_back_black_24dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/friend_search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="13dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:background="@drawable/join_check_button"
+        android:text="찾 기"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView5"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="23dp"
+        android:text="친구 ID"
+        android:textColor="#696969"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/friend_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/friend_search_button"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:text="" />
+
+    <LinearLayout
+        android:id="@+id/friend_ok_layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="200dp"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10">
+
+            <ImageView
+                android:id="@+id/friend_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40">
+
+            <TextView
+                android:id="@+id/friend_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="test"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/friend_state_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/friend_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="test"
+                android:textColor="#000000"/>
+
+            <Button
+                android:id="@+id/friend_add_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/join_check_button"
+                android:text="추 가"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/friend_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/friend_search"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="사용자를 찾을 수 없습니다."
+        android:textColor="#363636"
+        android:textSize="20dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/friend_no2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/friend_no"
+        android:layout_centerHorizontal="true"
+        android:text="친구 아이디를 다시 확인해주세요."
+        android:textColor="#dc696969"
+        android:textSize="15dp"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>

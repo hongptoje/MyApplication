@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.hong.myapplication.MainActivity">
+
+    <ImageButton
+        android:id="@+id/setting_button"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:background="#f9e613"
+        app:layout_constraintStart_toEndOf="@+id/talk_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_more_horiz_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/friend_button"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="0dp"
+        android:background="#f9e613"
+        app:layout_constraintEnd_toStartOf="@+id/talk_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_person_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/talk_button"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="0dp"
+        android:background="#f9e613"
+        app:layout_constraintEnd_toStartOf="@+id/setting_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/friend_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_chat_bubble_black_24dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="368dp"
+        android:layout_height="491dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="68dp" />
+
+
+</android.support.constraint.ConstraintLayout>

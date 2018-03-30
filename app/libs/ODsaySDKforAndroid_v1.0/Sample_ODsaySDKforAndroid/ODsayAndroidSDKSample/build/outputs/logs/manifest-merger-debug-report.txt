@@ -1,0 +1,92 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/jamechoi/Desktop/AroProject/06.Aro-Android/ODsaySDKSampleForAndroid/ODsayAndroidSDKSample/src/main/AndroidManifest.xml:2:1-21:12
+	package
+		ADDED from /Users/jamechoi/Desktop/AroProject/06.Aro-Android/ODsaySDKSampleForAndroid/ODsayAndroidSDKSample/src/main/AndroidManifest.xml:3:5-60
+		INJECTED from /Users/jamechoi/Desktop/AroProject/06.Aro-Android/ODsaySDKSampleForAndroid/ODsayAndroidSDKSample/src/main/AndroidManifest.xml
+		INJECTED from /Users/jamechoi/Desktop/AroProject/06.Aro-Android/ODsaySDKSampleForAndroid/ODsayAndroidSDKSample/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/jamechoi/Desktop/AroProject/06.Aro-Android/ODsaySDKSampleForAndroid/ODsayAndroidSDKSample/src/main/AndroidManifest.xml
+		INJECTED from /Users/jamechoi/Desktop/AroProject/06.Aro-Android/ODsaySDKSampleForAndroid/ODsayAndroidSDKSample/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/jamechoi/Desktop/AroProject/06.Aro-Android/ODsaySDKSampleForAndroid/ODsayAndroidSDKSample/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /Users/jamechoi/Desktop/AroProject/06.Aro-Android/ODsaySDKSampleForAndroid/ODsayAndroidSDKSample/src/main/AndroidManifest.xml
+		INJECTED from /Users/jamechoi/Desktop/AroProject/06.Aro-Android/ODsaySDKSampleForAndroid/ODsayAndroidSDKSample/src/main/AndroidManifest.xml
+application
+ADDED from /Users/jamechoi/Desktop/AroProject/06.Aro-Android/ODsaySDKSampleForAndroid/ODsayAndroidSDKSample/src/main/AndroidManifest.xml:5:5-19:19
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/jamechoi/.android/build-cache/ab55d30523ddefce363ef00b5a3831f5baf92254/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/jamechoi/.android/build-cache/32864dee69a5e8c7306c0f6541bdfa1cee712043/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/jamechoi/.android/build-cache/8219268aadf5136e2aacb33511e1e1a97b8e1bc3/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/jamechoi/.android/build-cache/a1029fe81c8a7a5ac5e142158e27a8176026e1d2/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/jamechoi/.android/build-cache/455f8fb6bf31dd4a28003250a1ef208aa7af2a2a/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/jamechoi/.android/build-cache/c09c8c6dc2e4bb71282ad40305a84bfc3d07d783/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/jamechoi/.android/build-cache/2b98ad10be2adfed1284fe238df02439e0b0d218/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/jamechoi/.android/build-cache/bb25ccac387e23dc502dd777cf6b10aa0f1f69b2/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/jamechoi/.android/build-cache/4de765c1cbdcda94011f0f08a4924385e2752ed6/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/jamechoi/.android/build-cache/86fff56e6f9654e2dd811230bf8a9dc3b01b3623/output/AndroidManifest.xml:9:5-20
+	android:label
+		ADDED from /Users/jamechoi/Desktop/AroProject/06.Aro-Android/ODsaySDKSampleForAndroid/ODsayAndroidSDKSample/src/main/AndroidManifest.xml:8:9-41
+	android:supportsRtl
+		ADDED from /Users/jamechoi/Desktop/AroProject/06.Aro-Android/ODsaySDKSampleForAndroid/ODsayAndroidSDKSample/src/main/AndroidManifest.xml:10:9-35
+	android:roundIcon
+		ADDED from /Users/jamechoi/Desktop/AroProject/06.Aro-Android/ODsaySDKSampleForAndroid/ODsayAndroidSDKSample/src/main/AndroidManifest.xml:9:9-54
+	android:allowBackup
+		ADDED from /Users/jamechoi/Desktop/AroProject/06.Aro-Android/ODsaySDKSampleForAndroid/ODsayAndroidSDKSample/src/main/AndroidManifest.xml:6:9-35
+	android:icon
+		ADDED from /Users/jamechoi/Desktop/AroProject/06.Aro-Android/ODsaySDKSampleForAndroid/ODsayAndroidSDKSample/src/main/AndroidManifest.xml:7:9-43
+	android:theme
+		ADDED from /Users/jamechoi/Desktop/AroProject/06.Aro-Android/ODsaySDKSampleForAndroid/ODsayAndroidSDKSample/src/main/AndroidManifest.xml:11:9-40
+activity#com.example.jamechoi.odsaysdksampleforandroid.MainActivity
+ADDED from /Users/jamechoi/Desktop/AroProject/06.Aro-Android/ODsaySDKSampleForAndroid/ODsayAndroidSDKSample/src/main/AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from /Users/jamechoi/Desktop/AroProject/06.Aro-Android/ODsaySDKSampleForAndroid/ODsayAndroidSDKSample/src/main/AndroidManifest.xml:12:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/jamechoi/Desktop/AroProject/06.Aro-Android/ODsaySDKSampleForAndroid/ODsayAndroidSDKSample/src/main/AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from /Users/jamechoi/Desktop/AroProject/06.Aro-Android/ODsaySDKSampleForAndroid/ODsayAndroidSDKSample/src/main/AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from /Users/jamechoi/Desktop/AroProject/06.Aro-Android/ODsaySDKSampleForAndroid/ODsayAndroidSDKSample/src/main/AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/jamechoi/Desktop/AroProject/06.Aro-Android/ODsaySDKSampleForAndroid/ODsayAndroidSDKSample/src/main/AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from /Users/jamechoi/Desktop/AroProject/06.Aro-Android/ODsaySDKSampleForAndroid/ODsayAndroidSDKSample/src/main/AndroidManifest.xml:16:27-74
+uses-sdk
+INJECTED from /Users/jamechoi/Desktop/AroProject/06.Aro-Android/ODsaySDKSampleForAndroid/ODsayAndroidSDKSample/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/jamechoi/.android/build-cache/ab55d30523ddefce363ef00b5a3831f5baf92254/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/jamechoi/.android/build-cache/32864dee69a5e8c7306c0f6541bdfa1cee712043/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/jamechoi/.android/build-cache/8219268aadf5136e2aacb33511e1e1a97b8e1bc3/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/jamechoi/.android/build-cache/a1029fe81c8a7a5ac5e142158e27a8176026e1d2/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/jamechoi/.android/build-cache/455f8fb6bf31dd4a28003250a1ef208aa7af2a2a/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/jamechoi/.android/build-cache/c09c8c6dc2e4bb71282ad40305a84bfc3d07d783/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/jamechoi/.android/build-cache/2b98ad10be2adfed1284fe238df02439e0b0d218/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/jamechoi/.android/build-cache/bb25ccac387e23dc502dd777cf6b10aa0f1f69b2/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/jamechoi/.android/build-cache/4de765c1cbdcda94011f0f08a4924385e2752ed6/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/jamechoi/.android/build-cache/86fff56e6f9654e2dd811230bf8a9dc3b01b3623/output/AndroidManifest.xml:5:5-7:41
+MERGED from [ODsaySDKSampleForAndroid:SDK_release_v1.0.0:unspecified] /Users/jamechoi/.android/build-cache/9b0e79751d700a68f5a577a9dd7212001a6a4496/output/AndroidManifest.xml:7:5-9:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/jamechoi/.android/build-cache/ab55d30523ddefce363ef00b5a3831f5baf92254/output/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /Users/jamechoi/Desktop/AroProject/06.Aro-Android/ODsaySDKSampleForAndroid/ODsayAndroidSDKSample/src/main/AndroidManifest.xml
+		INJECTED from /Users/jamechoi/Desktop/AroProject/06.Aro-Android/ODsaySDKSampleForAndroid/ODsayAndroidSDKSample/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/jamechoi/Desktop/AroProject/06.Aro-Android/ODsaySDKSampleForAndroid/ODsayAndroidSDKSample/src/main/AndroidManifest.xml
+		INJECTED from /Users/jamechoi/Desktop/AroProject/06.Aro-Android/ODsaySDKSampleForAndroid/ODsayAndroidSDKSample/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/jamechoi/.android/build-cache/ab55d30523ddefce363ef00b5a3831f5baf92254/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/jamechoi/.android/build-cache/32864dee69a5e8c7306c0f6541bdfa1cee712043/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/jamechoi/.android/build-cache/8219268aadf5136e2aacb33511e1e1a97b8e1bc3/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/jamechoi/.android/build-cache/a1029fe81c8a7a5ac5e142158e27a8176026e1d2/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/jamechoi/.android/build-cache/455f8fb6bf31dd4a28003250a1ef208aa7af2a2a/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/jamechoi/.android/build-cache/c09c8c6dc2e4bb71282ad40305a84bfc3d07d783/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/jamechoi/.android/build-cache/2b98ad10be2adfed1284fe238df02439e0b0d218/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/jamechoi/.android/build-cache/bb25ccac387e23dc502dd777cf6b10aa0f1f69b2/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/jamechoi/.android/build-cache/4de765c1cbdcda94011f0f08a4924385e2752ed6/output/AndroidManifest.xml:25:5-27:41
+	android:value
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/jamechoi/.android/build-cache/ab55d30523ddefce363ef00b5a3831f5baf92254/output/AndroidManifest.xml:27:9-38
+	android:name
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/jamechoi/.android/build-cache/ab55d30523ddefce363ef00b5a3831f5baf92254/output/AndroidManifest.xml:26:9-47
+uses-permission#android.permission.INTERNET
+ADDED from [ODsaySDKSampleForAndroid:SDK_release_v1.0.0:unspecified] /Users/jamechoi/.android/build-cache/9b0e79751d700a68f5a577a9dd7212001a6a4496/output/AndroidManifest.xml:11:5-67
+	android:name
+		ADDED from [ODsaySDKSampleForAndroid:SDK_release_v1.0.0:unspecified] /Users/jamechoi/.android/build-cache/9b0e79751d700a68f5a577a9dd7212001a6a4496/output/AndroidManifest.xml:11:22-64

@@ -28,10 +28,10 @@ import java.util.List;
 public class DirectionFinder {
     //google direction api 사용할때
 //    private static final String DIRECTION_URL_API = "https://maps.googleapis.com/maps/api/directions/json?";
-//    private static final String GOOGLE_API_KEY = "AIzaSyDPXNrXi-7K3d4zZLy4EXIiJpmsWe1oWyI";
+//    private static final String GOOGLE_API_KEY = "";
     //Tmap사용할 때
     private static final String DIRECTION_URL_API = "https://api2.sktelecom.com/tmap/routes?version=1&format=json&";
-   private static final String TMAP_API_KEY = "e86e9219-ec30-466e-8741-4dc6b9d1d399";
+   private static final String TMAP_API_KEY = "";
     private DirectionFinderListener listener;
 //    private String origin;
 //    private String destination;
